@@ -27,11 +27,15 @@ twitter_username:
 github_username:  sohanglal
 
 # Build setting
-# theme: minima
-remote_theme: pages-themes/merlot@v0.2.0
+theme: minima
+#remote_theme: pages-themes/merlot@v0.2.0
 plugins:
   - jekyll-feed 
 #- jekyll-remote-theme
+
+collections:
+  'loosen':
+    output: true
 
 # Exclude from processing.
 # The following items will not be processed, by default.
