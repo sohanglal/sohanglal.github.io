@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Sohang Lal</title>
+</head>
+
+<body>
+  <section class="section">
+    <div class="container">
+      
+<h1 class="title">
+  kde partition manager fiasco
+</h1>
+<p class="subtitle"><strong>2024-01-09</strong></p>
+<ol>
+<li>wanted shrink [[Kubuntu]] to make space for [[NixOS]]</li>
+<li>Maybe drive was mounted </li>
+<li>but still alot of the same issues were observed when searching online </li>
+<li>ultimate search term 
+<ol>
+<li>kde partition manager shrink size in superblock and physical size differ</li>
+</ol>
+</li>
+<li><a href="https://unix.stackexchange.com/a/565932">filesystems - &quot;Either the superblock or the partition table is likely to be corrupt!&quot; after partition resized - Unix &amp; Linux Stack Exchange</a>
+<ol>
+<li>According to this answer ran e2fsck, a destructive operation just because I was afraid of the command line and didn't want to use parted </li>
+<li>long process </li>
+<li>resize2fs would've deleted rest of the partitions </li>
+<li>went off sleep </li>
+<li>seeked a better solution </li>
+<li><a href="https://unix.stackexchange.com/a/761811">filesystems - &quot;Either the superblock or the partition table is likely to be corrupt!&quot; after partition resized - Unix &amp; Linux Stack Exchange</a>
+<ol>
+<li>found this using growpart to fill the unallocated space, atleast won't have to delete nixos and windows reserved partitions </li>
+</ol>
+</li>
+<li><a href="https://unix.stackexchange.com/a/593910">partition - How to recover filesystem and physical size mismatch - Unix &amp; Linux Stack Exchange</a>
+<ol>
+<li>then came across this solution to use parted </li>
+<li>basically partition table via parted got updated but resize2fs failed to resize the filesystem </li>
+<li>simple solution is to update the partition table to the original standard </li>
+<li>used <code>sudo fdisk -l</code> to read start and end sectors </li>
+<li>entered <code>parted /dev/nvme0n1</code></li>
+<li>resizepart 4 859174911s
+<ol>
+<li>gave sector number for perfect granuality</li>
+<li><a href="https://wiki.archlinux.org/title/Parted">Parted - ArchWiki</a></li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>had to e2fsck again 
+<ol>
+<li>this reversed all the destructive changes that I made the day before</li>
+</ol>
+</li>
+<li>Kubuntu still wouldn't boot </li>
+<li>for some reason the files in /boot vanished </li>
+<li>backup was there on desktop </li>
+<li>copied those files from Desktop to /boot started working again </li>
+<li>even though the boot partition is mounted on /boot/efi, kubuntu had installed the files in /boot which is p4 and /boot/efi is on p1</li>
+<li>To boot into kubuntu using the backup files, used this guide: <a href="https://www.linuxfoundation.org/blog/blog/classic-sysadmin-how-to-rescue-a-non-booting-grub-2-on-linux">Classic SysAdmin: How to Rescue a Non-booting GRUB 2 on Linux - Linux Foundation</a>
+grub&gt; set root=(hd0,1)
+grub&gt; linux /boot/vmlinuz-3.13.0-29-generic root=/dev/sda1
+grub&gt; initrd /boot/initrd.img-3.13.0-29-generic
+grub&gt; boot</li>
+<li>couldn't run <code>sudo update-grub</code></li>
+<li>did <code>sudo mkidr &lt;whatever had to be made&gt;</code></li>
+<li>ran after that </li>
+<li>on success, it will show that the vmlinuz and initrd images were found </li>
+<li><code>sudo grub install /dev/nvme0n1</code></li>
+<li>Ran diff -r against backups to make sure there weren't any destructive changes </li>
+<li>Completed 2024-01-11</li>
+</ol>
+
+
+    </div>
+  </section>
+</body>
+
+</html>

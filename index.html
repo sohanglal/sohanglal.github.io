@@ -1,79 +1,29 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html class=" neoiqs idc0_343"><head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta name="robots" content="noindex">
-<title>testing 3 </title>
-<link rel="StyleSheet" href="rti_frame_data/lcd.css" type="text/css">
-<link rel="StyleSheet" href="rti_frame_data/rtime.css" type="text/css">
-<script type="text/javascript" src="rti_frame_data/lcdscript_en.js"></script>
-<script type="text/javascript" src="rti_frame_data/rtime.js"></script>
-<link href="rtx_frame_data/inject.css" type="text/css" rel="stylesheet"></head>
-<body class="vsc-initialized">
-<script type="text/javascript">
-  document.onblur=rtx_stop;
-  rt_msg['click button'] = 'Click a button to start';
-</script>
+<!DOCTYPE html>
+<html lang="en">
 
-<div class="startstop">
-<button type="button" class="rtcols" onclick="rtx_start(0, 64)">
-  <table><tbody><tr><td class="rtc0">0</td><td class="rtc64">64</td></tr></tbody></table>
-</button>
-<button type="button" class="rtcols" onclick="rtx_start(0,128)">
-  <table><tbody><tr><td class="rtc0">0</td><td class="rtc128">128</td></tr></tbody></table>
-</button>
-<button type="button" class="rtcols" onclick="rtx_start(0,192)">
-  <table><tbody><tr><td class="rtc0">0</td><td class="rtc192">192</td></tr></tbody></table>
-</button>
-<button type="button" class="rtcols" onclick="rtx_start(64,192)">
-  <table><tbody><tr><td class="rtc64">64</td><td class="rtc192">192</td></tr></tbody></table>
-</button>
-<button type="button" class="rtcols" onclick="rtx_start(96,224)">
-  <table><tbody><tr><td class="rtc96">96</td><td class="rtc224">224</td></tr></tbody></table>
-</button>
-<button type="button" class="rtcols" onclick="rtx_start(128,255)">
-  <table><tbody><tr><td class="rtc128">128</td><td class="rtc255">255</td></tr></tbody></table>
-</button>
-<button type="button" class="rtcols" onclick="rtx_start(0,255)">
-  <table><tbody><tr><td class="rtc0">0</td><td class="rtc255">255</td></tr></tbody></table>
-</button>
-<button type="button" class="rtcols" onclick="rtx_stop()">
-  <table><tbody><tr><td class="wide">Stop test</td></tr></tbody></table>
-</button>
-</div> <!--startstop-->
+<head>
+  <meta charset="utf-8">
+  <title>Sohang Lal</title>
+</head>
 
-<div id="rtx_block">
-  <div id="rtx_cont">
-    <div id="rtx_imgcont">
-      <img id="rtx_img" src="rtx_frame_data/rtx-64-192.png" alt="pattern" width="700" height="50">
+<body>
+  <section class="section">
+    <div class="container">
+      
+<h1 class="title">
+  List of blog posts
+</h1>
+<ul>
+  <!-- If you are using pagination, section.pages will be empty. You need to use the paginator object -->  
+  
+  <li><a href="https://sohanglal.github.io/kde-partition-manager-fiasco/">kde partition manager fiasco</a></li>
+  
+  <li><a href="https://sohanglal.github.io/calisthenics-hiit/">Calisthenics + HIIT</a></li>
+  
+</ul>
+
     </div>
- </div>
-  <div id="rtx_cont2">
-    <div id="rtx_imgcont2">
-      <img id="rtx_img2" src="rtx_frame_data/rtx-64-192.png" alt="ref pattern" width="700" height="10">
-    </div>
-  </div>
-</div>
+  </section>
+</body>
 
-<div id="rtx_cache">
-  <img src="rtx_frame_data/rtx-0-128.png" alt="" width="1" height="1">
-  <img src="rtx_frame_data/rtx-0-192.png" alt="" width="1" height="1">
-  <img src="rtx_frame_data/rtx-0-255.png" alt="" width="1" height="1">
-  <img src="rtx_frame_data/rtx-0-64.png" alt="" width="1" height="1">
-  <img src="rtx_frame_data/rtx-128-255.png" alt="" width="1" height="1">
-  <img src="rtx_frame_data/rtx-64-192.png" alt="" width="1" height="1">
-  <img src="rtx_frame_data/rtx-96-224.png" alt="" width="1" height="1">
-</div>  
-
-<div id="rt_info">
-  <div id="rt_colinfo">
-    Current RGB values: <div id="rt_colvals">-</div>
-  </div>
-  <div id="rt_framedrop">
-     Frame drop rate (estimated): <div id="rt_framedrop_val">-</div>
-  </div>
-  <div class="clearfloats"></div>
-</div>
-
-
-
-</body></html>
+</html>
