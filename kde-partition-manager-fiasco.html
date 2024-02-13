@@ -8,19 +8,19 @@
 <li>kde partition manager shrink size in superblock and physical size differ</li>
 </ol>
 </li>
-<li><a href="https://unix.stackexchange.com/a/565932" class="external">filesystems - “Either the superblock or the partition table is likely to be corrupt!” after partition resized - Unix &amp; Linux Stack Exchange<svg class="external-icon" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>
+<li><a href="https://unix.stackexchange.com/a/565932" class="external alias">filesystems - “Either the superblock or the partition table is likely to be corrupt!” after partition resized - Unix &amp; Linux Stack Exchange</a>
 <ol>
 <li>According to this answer ran e2fsck, a destructive operation just because I was afraid of the command line and didn’t want to use parted</li>
 <li>long process</li>
 <li>resize2fs would’ve deleted rest of the partitions</li>
 <li>went off sleep</li>
 <li>seeked a better solution</li>
-<li><a href="https://unix.stackexchange.com/a/761811" class="external">filesystems - “Either the superblock or the partition table is likely to be corrupt!” after partition resized - Unix &amp; Linux Stack Exchange<svg class="external-icon" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>
+<li><a href="https://unix.stackexchange.com/a/761811" class="external alias">filesystems - “Either the superblock or the partition table is likely to be corrupt!” after partition resized - Unix &amp; Linux Stack Exchange</a>
 <ol>
 <li>found this using growpart to fill the unallocated space, atleast won’t have to delete nixos and windows reserved partitions</li>
 </ol>
 </li>
-<li><a href="https://unix.stackexchange.com/a/593910" class="external">partition - How to recover filesystem and physical size mismatch - Unix &amp; Linux Stack Exchange<svg class="external-icon" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>
+<li><a href="https://unix.stackexchange.com/a/593910" class="external alias">partition - How to recover filesystem and physical size mismatch - Unix &amp; Linux Stack Exchange</a>
 <ol>
 <li>then came across this solution to use parted</li>
 <li>basically partition table via parted got updated but resize2fs failed to resize the filesystem</li>
@@ -30,7 +30,7 @@
 <li>resizepart 4 859174911s
 <ol>
 <li>gave sector number for perfect granuality</li>
-<li><a href="https://wiki.archlinux.org/title/Parted" class="external">Parted - ArchWiki<svg class="external-icon" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://wiki.archlinux.org/title/Parted" class="external alias">Parted - ArchWiki</a></li>
 </ol>
 </li>
 </ol>
@@ -47,7 +47,7 @@
 <li>backup was there on desktop</li>
 <li>copied those files from Desktop to /boot started working again</li>
 <li>even though the boot partition is mounted on /boot/efi, kubuntu had installed the files in /boot which is p4 and /boot/efi is on p1</li>
-<li>To boot into kubuntu using the backup files, used this guide: <a href="https://www.linuxfoundation.org/blog/blog/classic-sysadmin-how-to-rescue-a-non-booting-grub-2-on-linux" class="external">Classic SysAdmin: How to Rescue a Non-booting GRUB 2 on Linux - Linux Foundation<svg class="external-icon" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>
+<li>To boot into kubuntu using the backup files, used this guide: <a href="https://www.linuxfoundation.org/blog/blog/classic-sysadmin-how-to-rescue-a-non-booting-grub-2-on-linux" class="external alias">Classic SysAdmin: How to Rescue a Non-booting GRUB 2 on Linux - Linux Foundation</a>
 grub> set root=(hd0,1)
 grub> linux /boot/vmlinuz-3.13.0-29-generic root=/dev/sda1
 grub> initrd /boot/initrd.img-3.13.0-29-generic

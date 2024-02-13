@@ -9,13 +9,13 @@
     <title>about</title>
     <link>https://sohanglal.github.io/about</link>
     <guid>https://sohanglal.github.io/about</guid>
-    <description>Software consultant NixOS nix python neovim qtile Contact | GitHub.</description>
+    <description>Software consultant NixOS nix python neovim qtile rust Contact | GitHub.</description>
     <pubDate>Tue, 13 Feb 2024 05:27:10 GMT</pubDate>
   </item><item>
     <title>‎</title>
     <link>https://sohanglal.github.io/</link>
     <guid>https://sohanglal.github.io/</guid>
-    <description> kde partition manager fiasco‎ .</description>
+    <description> kde partition manager fiasco‎ NixOS on Lenovo Legion 5 (2021) resizing boot partition setup github ssh .</description>
     <pubDate>Mon, 12 Feb 2024 15:17:51 GMT</pubDate>
   </item><item>
     <title>kde partition manager fiasco</title>
@@ -24,9 +24,27 @@
     <description> wanted shrink Kubuntu to make space for NixOS Maybe drive was mounted but still alot of the same issues were observed when searching online ultimate search term kde partition manager shrink size in superblock and physical size differ filesystems - “Either the superblock or the partition table is likely to be corrupt!” after partition resized - Unix &amp; Linux Stack Exchange According to this answer ran e2fsck, a destructive operation just because I was afraid of the command line and didn’t want to use parted long process resize2fs would’ve deleted rest of the partitions went off sleep seeked a better solution filesystems - “Either the superblock or the partition table is likely to be corrupt!” after partition resized - Unix &amp; Linux Stack Exchange found this using growpart to fill the unallocated space, atleast won’t have to delete nixos and windows reserved partitions partition - How to recover filesystem and physical size mismatch - Unix &amp; Linux Stack Exchange then came across this solution to use parted basically partition table via parted got updated but resize2fs failed to resize the filesystem simple solution is to update the partition table to the original standard used sudo fdisk -l to read start and end sectors entered parted /dev/nvme0n1 resizepart 4 859174911s gave sector number for perfect granuality Parted - ArchWiki had to e2fsck again this reversed all the destructive changes that I made the day before Kubuntu still wouldn’t boot for some reason the files in /boot vanished backup was there on desktop copied those files from Desktop to /boot started working again even though the boot partition is mounted on /boot/efi, kubuntu had installed the files in /boot which is p4 and /boot/efi is on p1 To boot into kubuntu using the backup files, used this guide: Classic SysAdmin: How to Rescue a Non-booting GRUB 2 on Linux - Linux Foundation grub&gt; set root=(hd0,1) grub&gt; linux /boot/vmlinuz-3.</description>
     <pubDate>Fri, 12 Jan 2024 19:38:56 GMT</pubDate>
   </item><item>
+    <title>resizing boot partition</title>
+    <link>https://sohanglal.github.io/resizing-boot-partition</link>
+    <guid>https://sohanglal.github.io/resizing-boot-partition</guid>
+    <description>resizing manually due to FAT32 limitations and GParted lacks support for the same TIL: to backup a boot partition you just need to cp the files from the mounted boot partition to another folder.</description>
+    <pubDate>Sun, 10 Dec 2023 04:35:21 GMT</pubDate>
+  </item><item>
+    <title>NixOS on Lenovo Legion 5 (2021)</title>
+    <link>https://sohanglal.github.io/NixOS-on-Lenovo-Legion-5-(2021)</link>
+    <guid>https://sohanglal.github.io/NixOS-on-Lenovo-Legion-5-(2021)</guid>
+    <description>discrete graphics on in BIOS - NVIDIA add the following to /etc/nixos/configuration.nix: # Enable OpenGL hardware.opengl = { enable = true; driSupport = true; driSupport32Bit = true; }; services.</description>
+    <pubDate>Thu, 30 Nov 2023 07:33:25 GMT</pubDate>
+  </item><item>
+    <title>setup github ssh</title>
+    <link>https://sohanglal.github.io/setup-github-ssh</link>
+    <guid>https://sohanglal.github.io/setup-github-ssh</guid>
+    <description> generate key ssh-keygen -t ed25519 -C ”your@email.com” cat ~/.ssh/id_ed25519.pub copy key to github cat ~/.ssh/id_ed25519.pub | xclip -sel c https://github.</description>
+    <pubDate>Sat, 11 Nov 2023 06:11:52 GMT</pubDate>
+  </item><item>
     <title>Calisthenics + HIIT</title>
-    <link>https://sohanglal.github.io/Calisthenics-+-HIIT</link>
-    <guid>https://sohanglal.github.io/Calisthenics-+-HIIT</guid>
+    <link>https://sohanglal.github.io/rev/Calisthenics-+-HIIT</link>
+    <guid>https://sohanglal.github.io/rev/Calisthenics-+-HIIT</guid>
     <description>strength training The Recommended Routine RepsExerciseComments30sDeadbugs5-10Squat Sky ReachesYou can do these assisted.10+GMB Wrist PrepDo as many reps as you want5-10Yuri’s Shoulder Band WarmupLess good: Stick dislocates, can also be done with a tee-shirt10Arch HangsAdd these after you reach Negative Pullups.</description>
     <pubDate>Mon, 25 Sep 2023 06:49:07 GMT</pubDate>
   </item>
