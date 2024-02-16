@@ -47,11 +47,13 @@
 <li>backup was there on desktop</li>
 <li>copied those files from Desktop to /boot started working again</li>
 <li>even though the boot partition is mounted on /boot/efi, kubuntu had installed the files in /boot which is p4 and /boot/efi is on p1</li>
-<li>To boot into kubuntu using the backup files, used this guide: <a href="https://www.linuxfoundation.org/blog/blog/classic-sysadmin-how-to-rescue-a-non-booting-grub-2-on-linux" class="external alias">Classic SysAdmin: How to Rescue a Non-booting GRUB 2 on Linux - Linux Foundation</a>
-grub> set root=(hd0,1)
-grub> linux /boot/vmlinuz-3.13.0-29-generic root=/dev/sda1
-grub> initrd /boot/initrd.img-3.13.0-29-generic
-grub> boot</li>
+<li>To boot into kubuntu using the backup files, used this guide: <a href="https://www.linuxfoundation.org/blog/blog/classic-sysadmin-how-to-rescue-a-non-booting-grub-2-on-linux" class="external alias">Classic SysAdmin: How to Rescue a Non-booting GRUB 2 on Linux - Linux Foundation</a></li>
+</ol>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="bash" data-theme="github-dark github-light"><code data-language="bash" data-theme="github-dark github-light" style="display:grid;"><span data-line><span style="--shiki-dark:#B392F0;--shiki-light:#6F42C1;">grub></span><span style="--shiki-dark:#9ECBFF;--shiki-light:#032F62;"> set root=</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">(</span><span style="--shiki-dark:#9ECBFF;--shiki-light:#032F62;">hd0,1</span><span style="--shiki-dark:#E1E4E8;--shiki-light:#24292E;">)</span></span>
+<span data-line><span style="--shiki-dark:#B392F0;--shiki-light:#6F42C1;">grub></span><span style="--shiki-dark:#9ECBFF;--shiki-light:#032F62;"> linux /boot/vmlinuz-3.13.0-29-generic root=/dev/sda1</span></span>
+<span data-line><span style="--shiki-dark:#B392F0;--shiki-light:#6F42C1;">grub></span><span style="--shiki-dark:#9ECBFF;--shiki-light:#032F62;"> initrd /boot/initrd.img-3.13.0-29-generic</span></span>
+<span data-line><span style="--shiki-dark:#B392F0;--shiki-light:#6F42C1;">grub></span><span style="--shiki-dark:#9ECBFF;--shiki-light:#032F62;"> boot</span></span></code></pre></figure>
+<ol>
 <li>couldn’t run <code>sudo update-grub</code></li>
 <li>did <code>sudo mkidr &lt;whatever had to be made></code></li>
 <li>ran after that</li>
