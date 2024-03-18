@@ -6,6 +6,12 @@
       <description>Last 10 notes on 🚪</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>Qtile - make workspaces span across screens</title>
+    <link>https://sohanglal.github.io/Qtile---make-workspaces-span-across-screens</link>
+    <guid>https://sohanglal.github.io/Qtile---make-workspaces-span-across-screens</guid>
+    <description>linking groups - thinking have different groups on different screens assign i to screen 1 and i+10 to screen 2 use mod + , to toggle between screens, when one screen disconnects will have to check if screen 2 exists or not code @lazy.</description>
+    <pubDate>Mon, 18 Mar 2024 17:06:05 GMT</pubDate>
+  </item><item>
     <title>about</title>
     <link>https://sohanglal.github.io/about</link>
     <guid>https://sohanglal.github.io/about</guid>
