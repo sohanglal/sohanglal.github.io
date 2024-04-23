@@ -6,6 +6,12 @@
       <description>Last 10 notes on 🚪</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>set neovim as kitty&#039;s scrollback buffer</title>
+    <link>https://sohanglal.github.io/set-neovim-as-kitty's-scrollback-buffer</link>
+    <guid>https://sohanglal.github.io/set-neovim-as-kitty's-scrollback-buffer</guid>
+    <description>return function(INPUT_LINE_NUMBER, CURSOR_LINE, CURSOR_COLUMN) print(&#039;kitty sent:&#039;, INPUT_LINE_NUMBER, CURSOR_LINE, CURSOR_COLUMN) local function setOptions() vim.</description>
+    <pubDate>Tue, 23 Apr 2024 15:01:25 GMT</pubDate>
+  </item><item>
     <title>Qtile - make workspaces span across screens</title>
     <link>https://sohanglal.github.io/Qtile---make-workspaces-span-across-screens</link>
     <guid>https://sohanglal.github.io/Qtile---make-workspaces-span-across-screens</guid>
@@ -21,7 +27,7 @@
     <title>‎</title>
     <link>https://sohanglal.github.io/</link>
     <guid>https://sohanglal.github.io/</guid>
-    <description> Qtile - make workspaces span across screens kde partition manager fiasco‎ NixOS on Lenovo Legion 5 (2021) resizing boot partition setup github ssh .</description>
+    <description> set neovim as kitty’s scrollback buffer Qtile - make workspaces span across screens kde partition manager fiasco‎ NixOS on Lenovo Legion 5 (2021) resizing boot partition setup github ssh .</description>
     <pubDate>Mon, 19 Feb 2024 13:23:17 GMT</pubDate>
   </item><item>
     <title>kde partition manager fiasco</title>
