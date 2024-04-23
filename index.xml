@@ -9,7 +9,7 @@
     <title>set neovim as kitty&#039;s scrollback buffer</title>
     <link>https://sohanglal.github.io/set-neovim-as-kitty's-scrollback-buffer</link>
     <guid>https://sohanglal.github.io/set-neovim-as-kitty's-scrollback-buffer</guid>
-    <description>return function(INPUT_LINE_NUMBER, CURSOR_LINE, CURSOR_COLUMN) print(&#039;kitty sent:&#039;, INPUT_LINE_NUMBER, CURSOR_LINE, CURSOR_COLUMN) local function setOptions() vim.</description>
+    <description> nvim pager for kitty history · GitHub return function(INPUT_LINE_NUMBER, CURSOR_LINE, CURSOR_COLUMN) print(&#039;kitty sent:&#039;, INPUT_LINE_NUMBER, CURSOR_LINE, CURSOR_COLUMN) local function setOptions() vim.</description>
     <pubDate>Tue, 23 Apr 2024 15:01:25 GMT</pubDate>
   </item><item>
     <title>Qtile - make workspaces span across screens</title>
