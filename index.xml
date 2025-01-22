@@ -6,6 +6,18 @@
       <description>Last 10 notes on 🚪</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>air quality monitor</title>
+    <link>https://sohanglal.github.io/air-quality-monitor</link>
+    <guid>https://sohanglal.github.io/air-quality-monitor</guid>
+    <description>hardware Buy Sensirion SEN54-SDN-T Environment Sensor for PM, VOC, NOx, RH &amp; T Online In India at HUBTRONICS.in Buy 6 Pin GHR-06V-S 1.25mm Board to Wire Connector - 15cm Wire Length Online In India at HUBTRONICS.</description>
+    <pubDate>Wed, 22 Jan 2025 07:19:15 GMT</pubDate>
+  </item><item>
+    <title>about</title>
+    <link>https://sohanglal.github.io/about</link>
+    <guid>https://sohanglal.github.io/about</guid>
+    <description>Software Engineer and Tech consultant GNU/Linux NixOS nix python neovim qtile rust git ollama termux Contact | GitHub.</description>
+    <pubDate>Sun, 28 Jul 2024 09:57:06 GMT</pubDate>
+  </item><item>
     <title>set neovim as kitty&#039;s scrollback buffer</title>
     <link>https://sohanglal.github.io/set-neovim-as-kitty's-scrollback-buffer</link>
     <guid>https://sohanglal.github.io/set-neovim-as-kitty's-scrollback-buffer</guid>
@@ -18,16 +30,10 @@
     <description>linking groups - thinking have different groups on different screens assign i to screen 1 and i+10 to screen 2 use mod + , to toggle between screens, when one screen disconnects will have to check if screen 2 exists or not code @lazy.</description>
     <pubDate>Mon, 18 Mar 2024 17:06:05 GMT</pubDate>
   </item><item>
-    <title>about</title>
-    <link>https://sohanglal.github.io/about</link>
-    <guid>https://sohanglal.github.io/about</guid>
-    <description>Software consultant GNU/Linux NixOS nix python neovim qtile rust git ollama termux Contact | GitHub.</description>
-    <pubDate>Thu, 14 Mar 2024 17:30:34 GMT</pubDate>
-  </item><item>
     <title>‎</title>
     <link>https://sohanglal.github.io/</link>
     <guid>https://sohanglal.github.io/</guid>
-    <description> set neovim as kitty’s scrollback buffer Qtile - make workspaces span across screens kde partition manager fiasco‎ NixOS on Lenovo Legion 5 (2021) resizing boot partition setup github ssh .</description>
+    <description> air quality monitor set neovim as kitty’s scrollback buffer Qtile - make workspaces span across screens kde partition manager fiasco‎ NixOS on Lenovo Legion 5 (2021) resizing boot partition setup github ssh .</description>
     <pubDate>Mon, 19 Feb 2024 13:23:17 GMT</pubDate>
   </item><item>
     <title>kde partition manager fiasco</title>
