@@ -6,17 +6,17 @@
       <description>Last 10 notes on 🚪</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>about</title>
+    <link>https://sohanglal.github.io/about</link>
+    <guid>https://sohanglal.github.io/about</guid>
+    <description>Software Engineer and Tech consultant GNU/Linux NixOS nix python neovim qtile git ollama termux Contact | GitHub.</description>
+    <pubDate>Fri, 31 Jan 2025 13:51:07 GMT</pubDate>
+  </item><item>
     <title>air quality monitor</title>
     <link>https://sohanglal.github.io/air-quality-monitor</link>
     <guid>https://sohanglal.github.io/air-quality-monitor</guid>
     <description>hardware Buy Sensirion SEN54-SDN-T Environment Sensor for PM, VOC, NOx, RH &amp; T Online In India at HUBTRONICS.in can buy Buy Sensirion SEN55-SDN-T Environmental Sensor Node Particulate Matter, RH/T, VOC, NOx Online In India at HUBTRONICS.</description>
     <pubDate>Wed, 22 Jan 2025 16:17:03 GMT</pubDate>
-  </item><item>
-    <title>about</title>
-    <link>https://sohanglal.github.io/about</link>
-    <guid>https://sohanglal.github.io/about</guid>
-    <description>Software Engineer and Tech consultant GNU/Linux NixOS nix python neovim qtile rust git ollama termux Contact | GitHub.</description>
-    <pubDate>Sun, 28 Jul 2024 09:57:06 GMT</pubDate>
   </item><item>
     <title>set neovim as kitty&#039;s scrollback buffer</title>
     <link>https://sohanglal.github.io/set-neovim-as-kitty's-scrollback-buffer</link>
