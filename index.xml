@@ -9,7 +9,7 @@
     <title>partition shrink while mounted</title>
     <link>https://sohanglal.github.io/partition-shrink-while-mounted</link>
     <guid>https://sohanglal.github.io/partition-shrink-while-mounted</guid>
-    <description>2025-02-28 shrank a partition while it was mounted in a system. How did I achieve this glorious task? Hibernate the os and shrank the partition from a live boot resumed working in the os and noticed that I wasn’t able to mkdir in the shrank partition thought nothing of it, rebooted filesystem checks failed on boot gparted would crash before it could fix the error since the the drive is 4tb ran simple sudo e2fsck -y -f -v /dev/mapper/nvme.</description>
+    <description>2025-02-28 shrank a partition while it was mounted in a system. How did I achieve this glorious task? Hibernate the os and shrank the partition from a live boot resumed working in the os and noticed that I wasn’t able to mkdir in the shrank partition thought nothing of it, rebooted filesystem checks failed on boot live boot gparted would crash before it could fix the error since the the drive is 4tb.</description>
     <pubDate>Fri, 28 Feb 2025 16:05:06 GMT</pubDate>
   </item><item>
     <title>about</title>
