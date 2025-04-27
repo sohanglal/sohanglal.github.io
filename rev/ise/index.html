@@ -4,6 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digital Paintings Gallery</title>
+    
+    <!-- Meta tags for social sharing -->
+    <meta property="og:title" content="HAPPY BIRTHDAY, MAMI!! 🎉 ">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="circles-1.png">
+    <meta property="og:url" content="">
+    <meta property="og:type" content="website">
+    
+    <!-- WhatsApp specific meta -->
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    
+    <!-- Twitter card tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="HAPPY BIRTHDAY, MAMI!! 🎉 ">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:image" content="circles-1.png">
+    
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -56,23 +74,11 @@
 </head>
 <body class="min-h-screen py-12 px-4">
     <div class="gallery-container">
-        <header class="mb-16 text-center">
-            <h1 class="text-5xl font-medium text-gray-800 mb-3">Digital Paintings</h1>
-            <p class="text-lg text-gray-600 max-w-2xl mx-auto">A collection of digital artworks exploring abstract forms and natural elements</p>
-        </header>
-        
         <div id="gallery" class="grid grid-cols-1 gap-10">
             <!-- Images will be loaded dynamically via JavaScript -->
         </div>
     </div>
 
-    <footer class="mt-20 text-center text-gray-500 text-sm pb-8">
-        <p>&copy; <span id="current-year"></span> Digital Art Collection</p>
-    </footer>
-
-    <script>
-        document.getElementById('current-year').textContent = new Date().getFullYear();
-    </script>
     <script src="script.js"></script>
 </body>
 </html> 

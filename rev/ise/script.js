@@ -1,19 +1,17 @@
 document.addEventListener('DOMContentLoaded', function() {
     const images = [
-        { src: 'circles-1.png', caption: 'The Chronal Carousel' },
-        { src: 'waves-1.png', caption: 'The Descent to Stillness', date: 'June 11, 2023' },
         { src: 'cave-1.png', caption: 'The Path Revealed', date: 'Aug 4, 2024' },
+        { src: 'waves-1.png', caption: 'The Descent to Stillness', date: 'June 11, 2023' },
         { src: 'trees-1.png', caption: 'Shared Roots, Dancing Leaves' },
+        { src: 'knots-1.jpeg', caption: 'Rewriting the Knots', date: 'August 18, 2024' },
         { src: 'bees-1.png', caption: 'Within the Hive', date: 'August 11, 2024' },
-        { src: 'knots-1.jpeg', caption: 'Rewriting the Knots', date: 'August 18, 2024' }
+        { src: 'circles-1.png', caption: 'The Chronal Carousel' },
     ];
 
     const gallery = document.getElementById('gallery');
-    const currentDate = new Date().toLocaleDateString('en-US', {
-        year: 'numeric',
-        month: 'long',
-        day: 'numeric'
-    });
+    
+    // Update meta tags with absolute URLs for social sharing
+    updateMetaTags(images[0].src, images[0].caption);
 
     // Add loading indicator
     const loadingIndicator = document.createElement('div');
@@ -107,6 +105,27 @@ document.addEventListener('DOMContentLoaded', function() {
             console.error('Error loading images:', error);
             gallery.innerHTML = '<p class="text-center text-red-500 py-10">Error loading images. Please refresh the page.</p>';
         });
+    
+    // Function to update meta tags with absolute URLs
+    function updateMetaTags(imageSrc, imageCaption) {
+        // Get absolute URL for the image
+        const absoluteImageUrl = new URL(imageSrc, window.location.href).href;
+        const pageUrl = window.location.href;
+        
+        // Update Open Graph meta tags
+        document.querySelector('meta[property="og:image"]').setAttribute('content', absoluteImageUrl);
+        document.querySelector('meta[property="og:url"]').setAttribute('content', pageUrl);
+        
+        // Update Twitter card meta tag
+        document.querySelector('meta[name="twitter:image"]').setAttribute('content', absoluteImageUrl);
+        
+        // Optional: Update title and description with first image caption
+        if (imageCaption) {
+            const title = `${imageCaption} | Digital Paintings Gallery`;
+            document.querySelector('meta[property="og:title"]').setAttribute('content', title);
+            document.querySelector('meta[name="twitter:title"]').setAttribute('content', title);
+        }
+    }
         
     // Add gallery interactivity
     function addGalleryInteractivity() {
